@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title></title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="title" content="" />
+
+    <link type="text/plain" rel="author" href="../humans.txt" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body >
+<!--[if lt IE 7]>
+<p class="chromeframe">
+    You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> or
+    <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>
+    to improve your experience.
+</p>
+<![endif]-->
+<div id="navheader">
+	<div class="container">
+        <h4 class="text-center">
+            Part I. 스프링 프레임워크 개요
+        </h4>
+        <table width="100%" summary="Navigation header">
+            <tr>
+                <td width="25%" align="left"><a accesskey="p" href="../index.html">Prev</a>&nbsp;</td>
+                <td width="50%" align="center">&nbsp;</td>
+                <td width="25%" align="right">&nbsp;<a accesskey="n" href="overview.html">Next</a></td>
+            </tr>
+        </table>
+        <hr>
+	</div>
+</div>
+
+<div class="container">
+	
+	<h2 class="page-header">Part I. 스프링 프레임워크 개요</h2>
+	<section id="partintro" title="Overview of Spring Framework">
+		<p>The Spring Framework is a lightweight solution and a potential one-stop-shop for building your enterprise-ready applications. However, Spring is modular, allowing you to use only those parts that you need, without having to bring in the rest. You can use the IoC container, with Struts on top, but you can also use only the <a class="link" href="orm.html#orm-hibernate" title="15.3&nbsp;Hibernate">Hibernate integration code</a> or the <a class="link" href="jdbc.html#jdbc-introduction" title="14.1&nbsp;Introduction to Spring Framework JDBC">JDBC abstraction layer</a>. The Spring Framework supports declarative transaction management, remote access to your logic through RMI or web services, and various options for persisting your data. It offers a full-featured <a class="link" href="mvc.html#mvc-introduction" title="17.1&nbsp;Introduction to Spring Web MVC framework">MVC framework</a>, and enables you to integrate <a class="link" href="aop.html#aop-introduction" title="9.1&nbsp;Introduction">AOP</a> transparently into your software.</p>
+        <p class="muted">스프링 프레임워크는 경량의 솔루션이고 엔터프라이즈급 응용 프로그램을 만들기 위한 잠재적인 on-stop-shop입니다. 그렇지만 스프링은 (나머지 부문을 가져올 필요없이) 당신이 필요로하는 부분만을 사용할 수 있도록 모듈화 되어 있습니다. 당신은 상위 계층에 스트럿츠와 같이 IoC 컨테이너를 사용할 수도 있고, <a class="link" href="orm.html#orm-hibernate" title="15.3&nbsp;Hibernate">하이버네이트 통합 코드(Hibernate integration code)</a> 또는 <a class="link" href="jdbc.html#jdbc-introduction" title="14.1&nbsp;Introduction to Spring Framework JDBC">JDBC 추상 계층(JDBC abstraction layer)</a>을 사용할 수도 있습니다. 스프링 프레임워크는 선언적 트랜잭션 관리와 RMI나 웹서비스를 통해 로직에 원격으로 액세스하고 데이터를 지속하기 위한 다양한 옵션을 지원합니다. 그것은 완전한 기능을 갖춘 <a class="link" href="mvc.html#mvc-introduction" title="17.1&nbsp;Introduction to Spring Web MVC framework">MVC 프레임워크</a>를 제공하고, <a class="link" href="aop.html#aop-introduction" title="9.1&nbsp;Introduction">AOP(Aspect Oriented Programming)</a>를 당신의 소프트웨어에 통합할 수 있습니다.</p>
+		<p><br></p>
+		<p>Spring is designed to be non-intrusive, meaning that your domain logic code generally has no dependencies on the framework itself. In your integration layer (such as the data access layer), some dependencies on the data access technology and the Spring libraries will exist. However, it should be easy to isolate these dependencies from the rest of your code base.</p>
+        <p class="muted">스프링은 non-intrusive하게 설계되었는데, 이것은 도메인 로직 코드가 일반적으로 프레임워크 자체에 비 종속적이라는 것을 의미합니다. 당신의 통합 계층에서는 (예를 들면 데이타 액세스 계층같은) 데이터 액세스 기술과 스프링 라이브러리에 대해 약간의 종속성이 존재할 것입니다. 그러나 당신의 코드 베이스의 나머지 부분에서 이러한 종속성을 분리하기 쉬워야 합니다.</p>
+		<p><br></p>
+		<p>This document is a reference guide to Spring Framework features. If you have any requests, comments, or questions on this document, please post them on the user mailing list or on the support forums at <a class="ulink" href="http://forum.springsource.org/" target="_top">http://forum.springsource.org/</a>.</p>
+        <p class="muted">이 문서는 스프링 프레임워크 기능에 대한 레퍼런스 가이드입니다. 만약 이 문서에 대해 어떠한 요구나 의견 또는 문의 사항이 있으실 경우에는 사용자 메일링 리스트나 사이트 포럼(<a class="ulink" href="http://forum.springsource.org/" target="_top">http://forum.springsource.org/</a>)에 글을 게시해 주시기 바랍니다.</p>
+	</section>
+
+</div>
+
+<div id="navfooter">
+    <div class="container">
+        <hr>
+        <table width="100%" summary="Navigation header">
+            <tr>
+                <td width="25%" align="left"><a accesskey="p" href="../index.html">Prev</a>&nbsp;</td>
+                <td width="50%" align="center">&nbsp;</td>
+                <td width="25%" align="right">&nbsp;<a accesskey="n" href="overview.html">Next</a></td>
+            </tr>
+            <tr>
+                <td width="25%" align="left">Spring Framework Reference Documentation&nbsp;</td>
+                <td width="50%" align="center"><a accesskey="h" href="../index.html">Home</a></td>
+                <td width="25%" align="right">1. 스프링 프레임워크 소개</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script src="../js/vendor/jquery-1.9.1.min.js"></script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
