@@ -50,31 +50,29 @@
 	<section id="chapter" title="1. Introduction to Spring Framework">
         <h2 class="page-header"><a name="overview"></a>1. 스프링 프레임워크 소개</h2>
         <p>Spring Framework is a Java platform that provides comprehensive infrastructure support for developing Java applications. Spring handles the infrastructure so you can focus on your application.</p>
-        <p class="muted">스프링 프레임워크는 자바 응용 프로그램 개발을 위해 포괄적인 인프라를 제공하는 자바 플랫폼입니다. 당신의 응용 프로그램에 집중할 수 있도록 스프링이 인프라를 핸들링합니다.</p>
-		<p><br></p>
+        <p class="muted">스프링 프레임워크는 자바 애플리케이션 개발을 위해 포괄적인 인프라스트럭쳐를 제공하는 자바 플랫폼입니다. 당신의 애플리케이션에 집중할 수 있도록 스프링이 인프라를 핸들링합니다.</p>
 		<p>Spring enables you to build applications from “plain old Java objects” (POJOs) and to apply enterprise services non-invasively to POJOs. This capability applies to the Java SE programming model and to full and partial Java EE.</p>
-        <p class="muted">Spring enables you to build applications from “plain old Java objects” (POJOs) and to apply enterprise services non-invasively to POJOs. This capability applies to the Java SE programming model and to full and partial Java EE.</p>
-		<p><br></p>
+        <p class="muted">스프링은 "오래된 방식의 간단한 자바 오브젝트" (Plain Old Java Objects:POJOs)로 애플리케이션을 만들 수 있고 엔터프라이즈 서비스를 non-invasively으로 POJOs를 적용할 수 있습니다. 이 기능은 자바 SE 프로그래밍 모델과 전체 또는 부분적으로 자바 EE에 적용됩니다.</p>
 		<p>Examples of how you, as an application developer, can use the Spring platform advantage:</p>
-        <p class="muted">Examples of how you, as an application developer, can use the Spring platform advantage:</p>
+        <p class="muted">애플리케이션 개발자로써 당신이 스프링 플랫폼의 장점을 어떻게 사용할 수 있는가에 대한 예제 :</p>
         <ul class="itemizedlist" type="disc">
             <li class="listitem">Make a Java method execute in a database transaction without having to deal with transaction APIs.</li>
-            <li class="listitem muted">Make a Java method execute in a database transaction without having to deal with transaction APIs.</li>
+            <li class="listitem muted">트랜잭션 API를 사용하여 처리할 필요없이 데이터베이스 트랜잭션에서 자바 메소드를 실행하도록 만듭니다.</li>
             <li class="listitem">Make a local Java method a remote procedure without having to deal with remote APIs.</li>
-            <li class="listitem muted">Make a local Java method a remote procedure without having to deal with remote APIs.</li>
+            <li class="listitem muted">원격 API를 사용하여 처리할 필요없이 로컬 자바 메소드를 원격 프로시저로 만듭니다.</li>
             <li class="listitem">Make a local Java method a management operation without having to deal with JMX APIs.</li>
-            <li class="listitem muted">Make a local Java method a management operation without having to deal with JMX APIs.</li>
+            <li class="listitem muted">JMX API를 사용하여 처리할 필요없이 로컬 자바 메소드를 관리 작업으로 만듭니다.</li>
             <li class="listitem">Make a local Java method a message handler without having to deal with JMS APIs.</li>
-            <li class="listitem muted">Make a local Java method a message handler without having to deal with JMS APIs.</li>
+            <li class="listitem muted">JMS API를 사용하여 처리할 필요없이 로컬 자바 메소드를 메시지 핸들러로 만듭니다.</li>
         </ul>
 	</section>
 
     <section id="titlepage" title="1.1 Dependency Injection and Inversion of Control">
-        <h2 class="page-header"><a name="overview-dependency-injection"></a>1.1 Dependency Injection and Inversion of Control</h2>
+        <h2 class="page-header"><a name="overview-dependency-injection"></a>1.1 의존성 주입(Dependency Injection)과 제어의 역전(Inversion of Control)</h2>
         <div class="row">
             <div class="span5">
                 <p>Java applications -- a loose term that runs the gamut from constrained applets to n-tier server-side enterprise applications -- typically consist of objects that collaborate to form the application proper. Thus the objects in an application have dependencies on each other.</p>
-                <p class="muted">Java applications -- a loose term that runs the gamut from constrained applets to n-tier server-side enterprise applications -- typically consist of objects that collaborate to form the application proper. Thus the objects in an application have dependencies on each other.</p>
+                <p class="muted">자바 애플리케이션은 -- 제한적인 애플릿부터 n 계층 서버사이드 엔터프라이즈 애플리케이션까지 이르는 -- 일반적으로 애플리케이션에 적절한 형태로 협력 애플리케이션 객체로 구성됩니다. 따라서 애플리케이션의 객체들은 서로 의존성을 가지고 있습니다.</p>
                 <p><br></p>
                 <p>Although the Java platform provides a wealth of application development functionality, it lacks the means to organize the basic building blocks into a coherent whole, leaving that task to architects and developers. True, you can use design patterns such as Factory, Abstract Factory, Builder, Decorator, and Service Locator to compose the various classes and object instances that make up an application. However, these patterns are simply that: best practices given a name, with a description of what the pattern does, where to apply it, the problems it addresses, and so forth. Patterns are formalized best practices that you must implement yourself in your application.</p>
                 <p class="muted">Although the Java platform provides a wealth of application development functionality, it lacks the means to organize the basic building blocks into a coherent whole, leaving that task to architects and developers. True, you can use design patterns such as Factory, Abstract Factory, Builder, Decorator, and Service Locator to compose the various classes and object instances that make up an application. However, these patterns are simply that: best practices given a name, with a description of what the pattern does, where to apply it, the problems it addresses, and so forth. Patterns are formalized best practices that you must implement yourself in your application.</p>
@@ -88,12 +86,12 @@
                 <p class="muted">For insight into IoC and DI, refer to Fowler's article at <a class="ulink" href="http://martinfowler.com/articles/injection.html" target="_top">http://martinfowler.com/articles/injection.html</a>.</p>
                 <p><br></p>
             </div>
-
-            <div class="span9">
-                <p>The Spring Framework Inversion of Control (IoC) component addresses this concern by providing a formalized means of composing disparate components into a fully working application ready for use. The Spring Framework codifies formalized design patterns as first-class objects that you can integrate into your own application(s). Numerous organizations and institutions use the Spring Framework in this manner to engineer robust, maintainable applications.</p>
-                <p class="muted">The Spring Framework Inversion of Control (IoC) component addresses this concern by providing a formalized means of composing disparate components into a fully working application ready for use. The Spring Framework codifies formalized design patterns as first-class objects that you can integrate into your own application(s). Numerous organizations and institutions use the Spring Framework in this manner to engineer robust, maintainable applications.</p>
-            </div>
         </div>
+        <div>
+            <p>The Spring Framework Inversion of Control (IoC) component addresses this concern by providing a formalized means of composing disparate components into a fully working application ready for use. The Spring Framework codifies formalized design patterns as first-class objects that you can integrate into your own application(s). Numerous organizations and institutions use the Spring Framework in this manner to engineer robust, maintainable applications.</p>
+            <p class="muted">The Spring Framework Inversion of Control (IoC) component addresses this concern by providing a formalized means of composing disparate components into a fully working application ready for use. The Spring Framework codifies formalized design patterns as first-class objects that you can integrate into your own application(s). Numerous organizations and institutions use the Spring Framework in this manner to engineer robust, maintainable applications.</p>
+        </div>
+        
     </section>
 
     <section id="titlepage" title="1.2 Modules">
